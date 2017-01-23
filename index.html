@@ -29,7 +29,7 @@
       function animate() {
         var time    = new Date();
         var hours   = 0;
-        var minutes = 60 - time.getMinutes();
+        var minutes = 59 - time.getMinutes();
         var seconds = 60 - time.getSeconds();
         var value   = ((minutes < 10) ? '0' : '') + minutes
                     + ':' + ((seconds < 10) ? '0' : '') + seconds;
