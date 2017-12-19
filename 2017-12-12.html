@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>DiRT Rally Sysnipo League Results</title>
+
+	<!-- Demo styling -->
+	<link href="../motties/docs/css/jq.css" rel="stylesheet">
+    
+	<!-- jQuery: required (tablesorter works with jQuery 1.2.3+) -->
+	<script src="../motties/docs/js/jquery-1.2.6.min.js"></script>
+    
+	<!-- Pick a theme, load the plugin & initialize plugin -->
+	<link href="../motties/dist/css/theme.default.min.css" rel="stylesheet">
+	<script src="../motties/dist/js/jquery.tablesorter.min.js"></script>
+	<script src="../motties/dist/js/jquery.tablesorter.widgets.min.js"></script>
+	<script>
+	$(function(){
+		$('table').tablesorter({
+			widgets        : ['zebra', 'columns'],
+			usNumberFormat : false,
+			sortReset      : true,
+			sortRestart    : true
+		});
+	});
+	</script>
+
+</head>
+<body>
+<div class="demo">
+    <script>
+        var e = document.getElementById("fileTime");
+        // Create a new JavaScript Date object based on the timestamp
+        // multiplied by 1000 so that the argument is in milliseconds, not seconds.
+        var date = new Date(1513721662.25 * 1000);
+        // Hours part from the timestamp
+        var hours = date.getHours();
+        // Minutes part from the timestamp
+        var minutes = "0" + date.getMinutes();
+        // Seconds part from the timestamp
+        var seconds = "0" + date.getSeconds();
+        // Will display time in 10:30:23 format
+        var formattedTime = hours + ':' + minutes.substr(-2);
+        e.innerHTML = "Results imported at " + formattedTime + " (your time)";
+    </script>
+    <br>
+    
+    <h1>Sysnipo Dirt League, 2017-12-12<br>2 Entries, 6 Stage(s)<br></h1>
+    
+    <table class="tablesorter"><thead><tr><th>#</th><th>Driver</th><th>Vehicle</th><th>SS1</th><th>SS2</th><th>SS3</th><th>SS4</th><th>SS5</th><th>SS6</th><th>Total Time</th><th>Diff. First</th><th>Platform</th></tr></thead><tbody><tr><td>1</td><td><img src='http://dirtgame.com/Content/images/nationality/14.jpg'></img>&nbsp;miguit<img src='http://dirtgame.com/content/images/leaderboard/icon_founder.png'></img>&nbsp;</td><td>Ford Focus RS WRC 2007</td><td>6:23.118</td><td>6:14.368</td><td>7:10.532</td><td>6:52.333</td><td>6:32.117</td><td>6:35.400</td><td>39:47.868</td><td>+00:00.000</td><td>Steam</td></tr>
+<tr><td>2</td><td><img src='http://dirtgame.com/Content/images/nationality/14.jpg'></img>&nbsp;TjZUIGER<img src='http://dirtgame.com/content/images/leaderboard/icon_founder.png'></img>&nbsp;</td><td>Subaru Impreza 2001</td><td>6:34.750</td><td>6:31.834</td><td>7:33.282</td><td>6:52.550</td><td>6:28.617</td><td>6:22.334</td><td>40:23.367</td><td>+00:35.499</td><td>Steam</td></tr>
+</tbody></table>
+    
+    <!--
+	<table class="tablesorter">
+		<thead>
+			<tr>
+				<th>AlphaNumeric Sort</th>
+				<th>Currency</th>
+				<th>Alphabetical</th>
+				<th>Sites</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr><td>abc 123</td><td>&#163;10,40</td><td>Koala</td><td>http://www.google.com</td></tr>
+			<tr><td>abc 1</td><td>&#163;234,10</td><td>Ox</td><td>http://www.yahoo.com</td></tr>
+			<tr><td>abc 9</td><td>&#163;10,33</td><td>Girafee</td><td>http://www.facebook.com</td></tr>
+			<tr><td>zyx 24</td><td>&#163;10</td><td>Bison</td><td>http://www.whitehouse.gov/</td></tr>
+			<tr><td>abc 11</td><td>&#163;3,20</td><td>Chimp</td><td>http://www.ucla.edu/</td></tr>
+			<tr><td>abc 2</td><td>&#163;56,10</td><td>Elephant</td><td>http://www.wikipedia.org/</td></tr>
+			<tr><td>abc 9</td><td>&#163;3,20</td><td>Lion</td><td>http://www.nytimes.com/</td></tr>
+			<tr><td>ABC 10</td><td>&#163;87,00</td><td>Zebra</td><td>https://github.com</td></tr>
+			<tr><td>zyx 1</td><td>&#163;99,90</td><td>Koala</td><td>http://www.mit.edu/</td></tr>
+			<tr><td>zyx 12</td><td>&#163;234,10</td><td>Llama</td><td>http://www.nasa.gov/</td></tr>
+		</tbody>
+	</table>
+    -->
+</div>
+</body></html>
